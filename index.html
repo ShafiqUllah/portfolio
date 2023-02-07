@@ -80,7 +80,7 @@
 
 <script type="text/javascript" src="js/contactme.js"></script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
   function handleIt() {
     axios.post('https://130kcncfh2.execute-api.us-east-1.amazonaws.com/v1/callstepfunction', 
@@ -103,12 +103,25 @@
   return false;
   }
 
-</script>
+</script> -->
 
 
 </head>
 
 <body>
+
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"34ba1fd6b4e521a94113acf5875486aad","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+
 <div class="site_wrapper">
   <div id="header">
     <div class="container">
@@ -838,7 +851,8 @@
   <!--end section-->
   <div class="clearfix"></div>
   
-  <a href="#" class="scrollup yellow-4"></a><!-- end scroll to top of the page--> 
+  <!-- <a href="#" class="scrollup yellow-4"></a> -->
+  <!-- end scroll to top of the page--> 
 </div>
 <!-- end site wraper --> 
 
