@@ -22,7 +22,7 @@ function objectifyForm(formArray) {
     return returnArray;
 }
 
-$("#contactme-form").validator().on("submit", function (event) {
+$("#contactme-form").on("submit", function (event) {
  console.log("Javascript called");
 
  var formData = $("#contactme-form").serializeArray();
