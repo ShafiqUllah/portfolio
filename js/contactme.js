@@ -42,10 +42,15 @@ $("#contactme-form").on("submit", function (event) {
     console.log("shafiq - OK");
     //alert("Your Requested Submitted Successfully ");
     console.log(response);
+
+    document.getElementById("submit_response").innerHTML = "Request has been successfully saved";
+    document.getElementById("contactme-form").reset();
+    
   })
   .catch( (error) => {
     console.log("shafiq - error");
     //alert("Ops !!! Failed to Submit. Retry again...");
+    document.getElementById("submit_response").innerHTML = "Unknown Error Happened. Please try again";
     console.log(error);
   });
   return false;
